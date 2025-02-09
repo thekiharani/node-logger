@@ -1,13 +1,32 @@
 {
   "name": "node-logger",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "license": "MIT",
+  "description": "A lightweight Node.js package for sending logs to AWS CloudWatch and optionally notifying Slack for critical alerts.",
+  "keywords": [
+    "node-logger",
+    "logger"
+  ],
+  "homepage": "https://github.com/thekiharani/node-logger",
+  "bugs": {
+    "url": "https://github.com/thekiharani/node-logger/issues"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "description": ""
+  "author": "Joseph Gitonga <joseph@thekiharani.com> (https://thekiharani.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thekiharani/node-logger.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.744.0",
+    "axios": "^1.7.9",
+    "winston": "^3.17.0"
+  }
 }
